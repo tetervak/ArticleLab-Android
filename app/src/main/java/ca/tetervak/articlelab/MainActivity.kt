@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    ComposeArticleApp()
+                    ArticlePage()
                 }
             }
         }
@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ComposeArticleApp() {
+fun ArticlePage() {
     ArticleCard(
         title = stringResource(R.string.title_jetpack_compose_tutorial),
         shortDescription = stringResource(R.string.compose_short_desc),
@@ -81,7 +81,7 @@ private fun ArticleCard(
 fun ComposeArticleAppPreview() {
     ArticleLabTheme {
         Surface {
-            ComposeArticleApp()
+            ArticlePage()
         }
     }
 }
